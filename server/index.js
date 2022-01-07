@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.get("/api/v1", (req, res) => {
-  res.json({ message: "Master Final Trigger API" });
+  res.json({ message: "Master Final Trigger API on cloud build" });
 });
 app.get("*", function (req, res) {
   res.redirect("/");
