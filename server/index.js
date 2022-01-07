@@ -5,7 +5,7 @@ const path = require("path");
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.get("/api/v1", (req, res) => {
   console.log("Final dev calling")
-  res.json({ message: "NYC Schudle Dev final API Trigger" });
+  res.json({ message: "NYC working fine" });
 });
 app.get("*", function (req, res) {
   res.redirect("/");
