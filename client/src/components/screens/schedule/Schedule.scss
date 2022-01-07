@@ -1,0 +1,46 @@
+.Schedule {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  overflow: hidden;
+  text-align: center;
+
+  border: 1px solid #ebedf0;
+  border-radius: 2px;
+  .calender {
+    flex: 1;
+    width: 100%;
+  }
+  .leavesReport {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    .trigger {
+      width: 10%;
+      background-color: transparent;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .verticalButton {
+        margin: auto;
+        width: 100%;
+        color: white;
+        background-color: #00b2b9;
+        writing-mode: vertical-lr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    .report {
+      border: 1px solid black;
+      border-radius: 2px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.ant-layout-sider-trigger {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 48px;
+  color: #fff;
+  line-height: 48px;
+  text-align: center;
+  background: #323031;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ant-btn-text:hover,
+.ant-btn-text:focus {
+  color: black;
+  background: white;
+  border-color: transparent;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #5d5c5d !important;
+}
+.ant-menu-inline .ant-menu-item::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5d5c5d;
+  transform: scaleY(0.0001);
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.ant-menu-light .ant-menu-item:hover {
+  color: #fff;
+}
+.ant-menu-item-selected {
+  color: white;
+}
+.ant-menu-item-active {
+  color: #fff !important;
+}
