@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.get("/api/v1", (req, res) => {
-  console.log("Working on Github actions")
+  console.log("Working on Github actions for dev and prod environments")
   res.json({ message: "Working on Github actions for dev and prod environments" });
 });
 app.get("*", function (req, res) {
