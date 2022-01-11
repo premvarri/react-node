@@ -4,8 +4,8 @@ const app = express();
 const path = require("path");
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.get("/api/v1", (req, res) => {
-  console.log("Final dev calling")
-  res.json({ message: "NYC working fine" });
+  console.log("Working on Github actions")
+  res.json({ message: "Working on Github actions" });
 });
 app.get("*", function (req, res) {
   res.redirect("/");
